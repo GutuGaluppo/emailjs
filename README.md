@@ -2,11 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##### Every command prefix by **$** sign needs to be run into the terminal
+
+#### `$ npx create-react-app emailjs`
+
 #### Available Scripts
 
 In the project directory, you can run:
 
-##### `npm start`
+##### `$ npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -15,9 +19,11 @@ The page will reload if you make edits.\
 
 ### Let's install EmailJS
 
-##### `npm install emailjs-com`
+##### `$ npm install emailjs-com`
 
-#### Create Contact.js file into _src_ folder and past the snippet bellow
+#### Create Contact.js file into _src_ folder...
+
+#### ...and past the snippet bellow
 [Taken from the official EmailJS documentation](https://www.emailjs.com/docs/examples/reactjs/)
 
     import React from 'react';
@@ -57,4 +63,19 @@ The page will reload if you make edits.\
 	);
     }
     
-### 
+### Now that we have our template, let's install _dotenv_ to place our personall data
+[dotenv](https://www.npmjs.com/package/dotenv)
+
+##### `$ npm install dotenv`
+
+**Dotenv** is a zero-dependency module that loads [environment variables](https://medium.com/chingu/an-introduction-to-environment-variables-and-how-to-use-them-f602f66d15fa) from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.
+
+### Create file .env in the root folder of your project
+
+once we create the app running _create-react-app_ we need to use REACT_APP_ before any definition
+
+    REACT_APP_USER_ID=
+    REACT_APP_TEMPLATE_ID=
+    REACT_APP_SERVICE_ID=
+    
+### Head over [emailjs.com](https://www.emailjs.com/docs/examples/reactjs/) and create an account (or Sing in)

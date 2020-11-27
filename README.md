@@ -91,13 +91,16 @@ Go to **Email Services** and _Add New Service_
 
 ![Screenshot 2020-11-26 at 20 14 31](https://user-images.githubusercontent.com/33703873/100387354-2d31de00-3028-11eb-9339-edf3eaba18a7.png)
 
-#
+<br />
+<br />
 
 Choose an email service (in this case I'm going to use Gmail)
 
 ![Screenshot 2020-11-26 at 20 14 52](https://user-images.githubusercontent.com/33703873/100387371-3753dc80-3028-11eb-834e-a087b6d5a72f.png#)
 
-#
+<br />
+<br />
+
 You can change its name or keep the default
 
 ![create_email_server](https://user-images.githubusercontent.com/33703873/100387399-49ce1600-3028-11eb-96d6-0614c389268b.gif)
@@ -114,7 +117,7 @@ Under **Email Service** tab you will find your _Service ID_.
 ```
 REACT_APP_USER_ID=
 REACT_APP_TEMPLATE_ID=
-REACT_APP_SERVICE_ID= asg84Sf (illustration only)
+REACT_APP_SERVICE_ID=service_apg84ff (illustration only)
 ````
 
 ![Screenshot 2020-11-26 at 19 42 43](https://user-images.githubusercontent.com/33703873/100384253-02dc2280-3020-11eb-94fb-254fec407d09.png)
@@ -123,8 +126,36 @@ REACT_APP_SERVICE_ID= asg84Sf (illustration only)
 
 Under **Email Tamplate** tab:
 1. Create New Tamplate
-2. Change the _Best wishes, EmailJS team_ to any message you like
-3. **Save**
-4. Save the _Template ID_
+
+![Screenshot 2020-11-27 at 09 14 35](https://user-images.githubusercontent.com/33703873/100426527-4ae75d80-3091-11eb-92e1-ed96226e155f.png)
+
+<br/>
+
+2. Make your changes but keep in mind that all the dynamic fields need to be between double curly braces
 
 ![Screenshot 2020-11-26 at 21 26 45](https://user-images.githubusercontent.com/33703873/100389613-25753800-302e-11eb-9e49-8c7e9c09a797.png)
+
+3. **Save** it
+
+4. Test it
+
+![Custom_template](https://user-images.githubusercontent.com/33703873/100427957-8daa3500-3093-11eb-8112-a1da5a0842ef.gif)
+
+5. Check your email box
+
+![Screenshot 2020-11-27 at 09 34 39](https://user-images.githubusercontent.com/33703873/100428509-56885380-3094-11eb-8440-ddf93c9875ff.png)
+
+6. Check the template
+
+![Screenshot 2020-11-27 at 09 34 51](https://user-images.githubusercontent.com/33703873/100428652-846d9800-3094-11eb-96f9-f857fd63b9a3.png)
+
+7. Once it is working, let's move on and **copie the _Template ID_** and...
+8. ...paste it in .env
+
+```
+REACT_APP_USER_ID=
+REACT_APP_TEMPLATE_ID=template_ssdjfjj (illustration only)
+REACT_APP_SERVICE_ID=service_apg84ff (illustration only)
+````
+<br/>
+<br/>

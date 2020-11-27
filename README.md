@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##### Every command prefix by **$** sign needs to be run into the terminal
+_Every command prefix with **$** sign needs to be run into the terminal_
 
 #### `$ npx create-react-app emailjs`
 
@@ -15,17 +15,17 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.
 
-### Let's install EmailJS
+## Install EmailJS
 
 ##### `$ npm install emailjs-com`
 
-#### Create Contact.js file into _src_ folder...
+Create _Contact.js_ file into _src_ folder...
 
 <img width="304" alt="contactJS_path" src="https://user-images.githubusercontent.com/33703873/100430501-2bebca00-3097-11eb-8fb3-35e4dfcd8031.png">
 
-#### ...and past the snippet bellow
+...and past the snippet bellow
 [Taken from the official EmailJS documentation](https://www.emailjs.com/docs/examples/reactjs/)
 
 `src > Contact.js`
@@ -67,14 +67,8 @@ The page will reload if you make edits.\
 	);
     }
     
-### Now that we have our template, let's install _dotenv_ to place our personall data
-[dotenv](https://www.npmjs.com/package/dotenv)
 
-##### `$ npm install dotenv`
-
-**Dotenv** is a zero-dependency module that loads [environment variables](https://medium.com/chingu/an-introduction-to-environment-variables-and-how-to-use-them-f602f66d15fa) from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.
-
-### Create the file .env in the root of your project
+## Create the file .env in the root of your project
 Paste the snippet in it
 
 `.env`
@@ -83,7 +77,16 @@ Paste the snippet in it
     REACT_APP_TEMPLATE_ID=
     REACT_APP_SERVICE_ID=
     
-Once we create the app with _create-react-app_ we need to prefix every variable with **REACT_APP_**
+Once we create the app with _create-react-app_ we need to prefix every _enviroment variable_ with **REACT_APP_**
+
+## Install _dotenv_
+[dotenv](https://www.npmjs.com/package/dotenv)
+ 
+
+##### `$ npm install dotenv`
+
+>**Dotenv** is a zero-dependency module that loads [environment variables](https://medium.com/chingu/an-introduction-to-environment-variables-and-how-to-use->them-f602f66d15fa) from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App >methodology.
+
     
 ### Head over [emailjs.com](https://www.emailjs.com/docs/examples/reactjs/) and create an account (or Sing in)
 

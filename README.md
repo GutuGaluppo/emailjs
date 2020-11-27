@@ -8,7 +8,12 @@ On this exercise we will use two main tools
 
 1.**Terminal**
 
+<img width="127" alt="iTerm_icon" src="https://user-images.githubusercontent.com/33703873/100464344-bcdd9800-30cd-11eb-9a6b-bbaf76a06589.png">
+
 2.**VSC** _(Visual Studio Code)_
+
+<img width="125" alt="VSC_icon" src="https://user-images.githubusercontent.com/33703873/100464524-11811300-30ce-11eb-83db-e9952c09cf34.png">
+
 
 **IMPORTANTE** Every command prefix with **$** (dolar sign) needs to be run into the _terminal_ \
 (**without** the **$**) 

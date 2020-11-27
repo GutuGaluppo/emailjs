@@ -68,8 +68,8 @@ Create _Contact.js_ file into _src_ folder...
     }
     
 
-## Create the file .env in the root of your project
-Paste the snippet in it
+## Create the .env file in the root of your project
+Paste the snippet into it
 
 `.env`
 
@@ -95,21 +95,28 @@ Once we create the app with _create-react-app_ we need to prefix every _envirome
 
 Go to **Email Services** and _Add New Service_
 
-![add_email_service](https://user-images.githubusercontent.com/33703873/100430576-47ef6b80-3097-11eb-98e1-b59316d171f8.png)
+<p align="center">
+	<img alt="add_email_service" src="https://user-images.githubusercontent.com/33703873/100430576-47ef6b80-3097-11eb-98e1-b59316d171f8.png">
+</p>
 
 <br />
 <br />
 
 Choose an email service (in this case I'm going to use Gmail)
 
-![email_service_opt](https://user-images.githubusercontent.com/33703873/100430900-addbf300-3097-11eb-8e69-89dcac4ee91c.png)
+<p align="center">
+	<img alt="email_service_opt" src="https://user-images.githubusercontent.com/33703873/100430900-addbf300-3097-11eb-8e69-89dcac4ee91c.png">
+</p>
 
 <br />
 <br />
 
 You can change its name or keep the default
 
-![create_email_server](https://user-images.githubusercontent.com/33703873/100387399-49ce1600-3028-11eb-96d6-0614c389268b.gif)
+<p align="center">
+	<img alt="create_email_server" src="https://user-images.githubusercontent.com/33703873/100387399-49ce1600-3028-11eb-96d6-0614c389268b.gif">
+</p>
+
 
 1. **Connect account**
 2. Choose your email
@@ -118,7 +125,9 @@ You can change its name or keep the default
 
 Under **Email Service** tab you will find your _Service ID_.
 
-![serviceID](https://user-images.githubusercontent.com/33703873/100431036-e4b20900-3097-11eb-8c99-334666fe3884.png)
+<p align="center">
+	<img alt="serviceID" src="https://user-images.githubusercontent.com/33703873/100431036-e4b20900-3097-11eb-8c99-334666fe3884.png">
+</p>
 
 1. Copie it
 2. Paste it into .env
@@ -135,27 +144,44 @@ Under **Email Tamplate** tab:
 1. _Create New Tamplate_
 2. Make your changes but keep in mind that all the dynamic fields need to be between double curly braces
 
-![Template_customization](https://user-images.githubusercontent.com/33703873/100431674-ca2c5f80-3098-11eb-974e-06d5ed4d5a52.png)
+<p align="center">
+	<img alt="Template_customization" src="https://user-images.githubusercontent.com/33703873/100431674-ca2c5f80-3098-11eb-974e-06d5ed4d5a52.png">
+</p>
 
 <br/>
 
 3. **Save** it
 4. Test it
 
-![Custom_template](https://user-images.githubusercontent.com/33703873/100427957-8daa3500-3093-11eb-8112-a1da5a0842ef.gif)
+<p align="center">
+	<img alt="Custom_template" src="https://user-images.githubusercontent.com/33703873/100427957-8daa3500-3093-11eb-8112-a1da5a0842ef.gif">
+</p>
+
+<br/>
 
 5. Check your email box
 
-![email_box](https://user-images.githubusercontent.com/33703873/100431782-eaf4b500-3098-11eb-9243-6331994c7353.png)
+<p align="center">
+	<img alt="email_box" src="https://user-images.githubusercontent.com/33703873/100431782-eaf4b500-3098-11eb-9243-6331994c7353.png">
+</p>
+
+<br/>
 
 6. Check the template
 
-![email_body](https://user-images.githubusercontent.com/33703873/100431815-f6e07700-3098-11eb-9412-8f6e84854840.png)
+<p align="center">
+	<img alt="email_body" src="https://user-images.githubusercontent.com/33703873/100431815-f6e07700-3098-11eb-9412-8f6e84854840.png">
+</p>
+
+<br/>
 
 7. Once it is working, let's move on and **copy the _Template ID_** and...
 
-![templateID_settings](https://user-images.githubusercontent.com/33703873/100446732-9b6db380-30af-11eb-8f5d-19a2fd065428.png)
+<p align="center">
+	<img alt="templateID_settings" src="https://user-images.githubusercontent.com/33703873/100446732-9b6db380-30af-11eb-8f5d-19a2fd065428.png">
+</p>
 
+<br/>
 
 8. ...paste it into .env
 
@@ -170,7 +196,9 @@ REACT_APP_SERVICE_ID=service_apg84ff (illustration only)
 The only thing we miss now is the _**User ID**_\
 Under **Integration** you will find you _User ID_ in the **API keys**
 
-![userID](https://user-images.githubusercontent.com/33703873/100435683-93594800-309e-11eb-9769-63366f3fadc0.png)
+<p align="center">
+	<img alt="userID" src="https://user-images.githubusercontent.com/33703873/100435683-93594800-309e-11eb-9769-63366f3fadc0.png">
+</p>
 
 1. Copy it and paste it into .env
 
@@ -179,6 +207,8 @@ REACT_APP_USER_ID=user_rvO45qERpsasXdzOC3 (illustration only)
 REACT_APP_TEMPLATE_ID=template_ssdjfjj (illustration only)
 REACT_APP_SERVICE_ID=service_apg84ff (illustration only)
 ````
+<br/>
+<br/>
 
 # Importing our dependencies
 
@@ -354,7 +384,8 @@ textarea {
      }
   100% {
 	transform: translateZ(50px);
-	box-shadow: -12px 0 20px -12px rgba(0, 0, 0, 0.35), 12px 0 20px -12px rgba(0, 0, 0, 0.35);
+	box-shadow: -12px 0 20px -12px rgba(0, 0, 0, 0.35),
+	12px 0 20px -12px rgba(0, 0, 0, 0.35);
      }
 }
 ```

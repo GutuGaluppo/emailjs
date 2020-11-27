@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 _Every command prefix with **$** sign needs to be run into the terminal_
 
-#### `$ npx create-react-app emailjs`
+##### `$ npx create-react-app emailjs`
 
 #### Available Scripts
 
@@ -87,6 +87,9 @@ Once we create the app with _create-react-app_ we need to prefix every _envirome
 
 >**Dotenv** is a zero-dependency module that loads [environment variables](https://medium.com/chingu/an-introduction-to-environment-variables-and-how-to-use->them-f602f66d15fa) from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App >methodology.
 
+<br/>
+<hr>
+<br/>
     
 ### Head over [emailjs.com](https://www.emailjs.com/docs/examples/reactjs/) and create an account (or Sing in)
 

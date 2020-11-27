@@ -23,7 +23,7 @@ The page will reload if you make edits.\
 
 #### Create Contact.js file into _src_ folder...
 
-<img width="204" alt="Screenshot 2020-11-26 at 18 29 09" src="https://user-images.githubusercontent.com/33703873/100383507-08d10400-301e-11eb-8ddb-fa67274dd58e.png">
+<img width="304" alt="contactJS_path" src="https://user-images.githubusercontent.com/33703873/100430501-2bebca00-3097-11eb-8fb3-35e4dfcd8031.png">
 
 #### ...and past the snippet bellow
 [Taken from the official EmailJS documentation](https://www.emailjs.com/docs/examples/reactjs/)
@@ -89,14 +89,14 @@ Once we create the app with _create-react-app_ we need to prefix every variable 
 
 Go to **Email Services** and _Add New Service_
 
-![Screenshot 2020-11-26 at 20 14 31](https://user-images.githubusercontent.com/33703873/100387354-2d31de00-3028-11eb-9339-edf3eaba18a7.png)
+![add_email_service](https://user-images.githubusercontent.com/33703873/100430576-47ef6b80-3097-11eb-98e1-b59316d171f8.png)
 
 <br />
 <br />
 
 Choose an email service (in this case I'm going to use Gmail)
 
-![Screenshot 2020-11-26 at 20 14 52](https://user-images.githubusercontent.com/33703873/100387371-3753dc80-3028-11eb-834e-a087b6d5a72f.png#)
+![email_service_opt](https://user-images.githubusercontent.com/33703873/100430900-addbf300-3097-11eb-8e69-89dcac4ee91c.png)
 
 <br />
 <br />
@@ -120,36 +120,35 @@ REACT_APP_TEMPLATE_ID=
 REACT_APP_SERVICE_ID=service_apg84ff (illustration only)
 ````
 
-![Screenshot 2020-11-26 at 19 42 43](https://user-images.githubusercontent.com/33703873/100384253-02dc2280-3020-11eb-94fb-254fec407d09.png)
+![serviceID](https://user-images.githubusercontent.com/33703873/100431036-e4b20900-3097-11eb-8c99-334666fe3884.png)
 
-### Create an Email Tamplate
+## Create an Email Tamplate
 
 Under **Email Tamplate** tab:
-1. Create New Tamplate
+1. _Create New Tamplate_
+2. Make your changes but keep in mind that all the dynamic fields need to be between double curly braces
 
-![Screenshot 2020-11-27 at 09 14 35](https://user-images.githubusercontent.com/33703873/100426527-4ae75d80-3091-11eb-92e1-ed96226e155f.png)
+![Template_customization](https://user-images.githubusercontent.com/33703873/100431674-ca2c5f80-3098-11eb-974e-06d5ed4d5a52.png)
 
 <br/>
 
-2. Make your changes but keep in mind that all the dynamic fields need to be between double curly braces
-
-![Screenshot 2020-11-26 at 21 26 45](https://user-images.githubusercontent.com/33703873/100389613-25753800-302e-11eb-9e49-8c7e9c09a797.png)
-
 3. **Save** it
-
 4. Test it
 
 ![Custom_template](https://user-images.githubusercontent.com/33703873/100427957-8daa3500-3093-11eb-8112-a1da5a0842ef.gif)
 
 5. Check your email box
 
-![Screenshot 2020-11-27 at 09 34 39](https://user-images.githubusercontent.com/33703873/100428509-56885380-3094-11eb-8440-ddf93c9875ff.png)
+![email_box](https://user-images.githubusercontent.com/33703873/100431782-eaf4b500-3098-11eb-9243-6331994c7353.png)
 
 6. Check the template
 
-![Screenshot 2020-11-27 at 09 34 51](https://user-images.githubusercontent.com/33703873/100428652-846d9800-3094-11eb-96f9-f857fd63b9a3.png)
+![email_body](https://user-images.githubusercontent.com/33703873/100431815-f6e07700-3098-11eb-9412-8f6e84854840.png)
 
 7. Once it is working, let's move on and **copie the _Template ID_** and...
+
+![TemplateID](https://user-images.githubusercontent.com/33703873/100431881-0d86ce00-3099-11eb-94cb-9a201e78381b.png)
+
 8. ...paste it in .env
 
 ```

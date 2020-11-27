@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### INTRODUCTION / Instructions
+### First instructions
 
 On this exercise we will use two main tools
 

@@ -2,9 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<br/>
+<hr>
+
 ### First instructions
 
-On this exercise we will use two main tools
+On this tutorial we gonna use two main tools
 
 1.**Terminal**
 
@@ -14,9 +17,21 @@ On this exercise we will use two main tools
 
 <img width="125" alt="VSC_icon" src="https://user-images.githubusercontent.com/33703873/100464524-11811300-30ce-11eb-83db-e9952c09cf34.png">
 
+#### IMPORTANTE
+Every command prefix with **$** (dolar sign) needs to be run into the **terminal** \
+(**without** the **$**)
 
-**IMPORTANTE** Every command prefix with **$** (dolar sign) needs to be run into the _terminal_ \
-(**without** the **$**) 
+<br/>
+<hr>
+<br/> 
+
+# Let's get started
+
+Open your **Terminal** and create the folder
+
+<p align="center">
+	<img alt="creating_tutrial_folder" src="https://user-images.githubusercontent.com/33703873/100466411-2c08bb80-30d1-11eb-88d1-9f46d9239c76.gif">
+</p>
 
 ##### `$ npx create-react-app emailjs`
 

@@ -117,6 +117,9 @@ You can change its name or keep the default
 4. And finally hit **Create Service**
 
 Under **Email Service** tab you will find your _Service ID_.
+
+![serviceID](https://user-images.githubusercontent.com/33703873/100431036-e4b20900-3097-11eb-8c99-334666fe3884.png)
+
 1. Copie it
 2. Paste it into .env
 
@@ -125,8 +128,6 @@ REACT_APP_USER_ID=
 REACT_APP_TEMPLATE_ID=
 REACT_APP_SERVICE_ID=service_apg84ff (illustration only)
 ````
-
-![serviceID](https://user-images.githubusercontent.com/33703873/100431036-e4b20900-3097-11eb-8c99-334666fe3884.png)
 
 ## Create an Email Tamplate
 

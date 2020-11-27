@@ -152,11 +152,11 @@ Under **Email Tamplate** tab:
 
 ![email_body](https://user-images.githubusercontent.com/33703873/100431815-f6e07700-3098-11eb-9412-8f6e84854840.png)
 
-7. Once it is working, let's move on and **copie the _Template ID_** and...
+7. Once it is working, let's move on and **copy the _Template ID_** and...
 
 ![TemplateID](https://user-images.githubusercontent.com/33703873/100431881-0d86ce00-3099-11eb-94cb-9a201e78381b.png)
 
-8. ...paste it in .env
+8. ...paste it into .env
 
 ```
 REACT_APP_USER_ID=
@@ -165,3 +165,75 @@ REACT_APP_SERVICE_ID=service_apg84ff (illustration only)
 ````
 <br/>
 <br/>
+
+The only thing we miss now is the _**User ID**_\
+Under **Integration** you will find you _User ID_ in the **API keys**
+
+![userID](https://user-images.githubusercontent.com/33703873/100435683-93594800-309e-11eb-9769-63366f3fadc0.png)
+
+1. Copy it and paste it into .env
+
+```
+REACT_APP_USER_ID=user_rvO45qERpsasXdzOC3 (illustration only)
+REACT_APP_TEMPLATE_ID=template_ssdjfjj (illustration only)
+REACT_APP_SERVICE_ID=service_apg84ff (illustration only)
+````
+
+# Importing our dependencies
+
+`src > Contact.js`
+
+```
+import React from 'react';
+import './Contact.css';
+import emailjs from 'emailjs-com';
+require('dotenv').config();
+```
+
+1. Create variables to store your enviroment variables
+
+```
+const serviceID = process.env.REACT_APP_SERVICE_ID;
+const templateID = process.env.REACT_APP_TEMPLATE_ID;
+const userID = process.env.REACT_APP_USER_ID;
+```
+
+2. Replace the paramaters from _sendForm_ with your created variables
+
+```
+emailjs.sendForm(
+ serviceID,
+ templateID,
+ e.target,
+ userID
+)
+```
+
+3. Change our **form** a little
+
+```
+return (
+ <div className="form_wrapper">
+  <form onSubmit={sendEmail}>
+   <label>Name</label>
+   <input type="text" name="from_name" placeholder="Jack Sparrow"/>
+   <label>Email</label>
+   <input type="email" name="user_email" placeholder="sparrow@email.com"/>
+   <label>Phone</label>
+   <input type="phone" name="phone" placeholder="987654321"/>
+   <label>Subject</label>
+   <input type="text" name="subject" placeholder="Black pearl"/>
+   <label>Message</label>
+   <textarea name="message" rows="5" placeholder="Wherever we want to go, we'll go"/>
+   <input type="submit" value="Submit" className="btn"/>
+  </form>
+ </div>
+);
+```
+
+4. Create a _Contact.css_ so we can make it "less ugly" :stuck_out_tongue_winking_eye:
+
+
+
+# Now, restart your server so React can gather all the information from the _.env_ file.
+

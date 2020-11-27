@@ -230,10 +230,132 @@ return (
  </div>
 );
 ```
+Your _Contact.js_ should look like this
 
-4. Create a _Contact.css_ so we can make it "less ugly" :stuck_out_tongue_winking_eye:
+```
+import React from 'react';
+import './Contact.css';
+import emailjs from 'emailjs-com';
+require('dotenv').config();
+
+ export default function Contact() {
+   const serviceID = process.env.REACT_APP_SERVICE_ID;
+   const templateID = process.env.REACT_APP_TEMPLATE_ID;
+   const userID = process.env.REACT_APP_USER_ID;
+
+   function sendEmail(e) {
+      e.preventDefault();
+
+      console.log('email sent')
+
+      emailjs.sendForm(
+	serviceID,
+	templateID,
+	e.target,
+	userID
+     )
+     .then((result) => {
+	console.log(result.text);
+	}, (error) => {
+          console.log(error.text);
+     });
+     e.target.reset();
+  }
+
+ return (
+    <div className="form_wrapper">
+	<form onSubmit={sendEmail}>
+	  <label>Name</label>
+	  <input type="text" name="from_name" placeholder="Jack Sparrow"/>
+	  <label>Email</label>
+	  <input type="email" name="user_email" placeholder="sparrow@email.com"/>
+	  <label>Phone</label>
+	  <input type="phone" name="phone" placeholder="987654321"/>
+	  <label>Subject</label>
+	  <input type="text" name="subject" placeholder="Black pearl"/>
+	  <label>Message</label>
+	  <textarea name="message" rows="5" placeholder="Wherever we want to go, we'll go"/>
+	  <input type="submit" value="Submit" className="btn"/>
+	</form>
+    </div>
+  );
+}
+```
+
+4. Create a _Contact.css_ into _src_ folder so we can make it "less ugly" :stuck_out_tongue_winking_eye:
+
+`src > Contact.css`
+
+```
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 20vw;
+  height: 40px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+label {
+  align-self: flex-start;
+  text-decoration: underline;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 5px 10px rgba(170, 0, 255, 0.2);
+}
+
+.btn {
+  max-width: 8vw;
+  font-size: 1rem;
+  background: rgb(27, 255, 6);
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  animation: btn 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+textarea {
+  min-width: 20vw;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 15px;
+}
 
 
-
-# Now, restart your server so React can gather all the information from the _.env_ file.
+@keyframes btn {
+  0% {
+	transform: translateZ(0);
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+     }
+  100% {
+	transform: translateZ(50px);
+	box-shadow: -12px 0 20px -12px rgba(0, 0, 0, 0.35), 12px 0 20px -12px rgba(0, 0, 0, 0.35);
+     }
+}
+```
+## Now, restart your server so React can gather all the information from the _.env_ file.
 

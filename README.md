@@ -2,7 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-_Every command prefix with **$** sign needs to be run into the terminal_
+### INTRODUCTION / Instructions
+
+On this exercise we will use two main tools
+
+1.**Terminal**
+
+2.**VSC** _(Visual Studio Code)_
+
+**IMPORTANTE** Every command prefix with **$** (dolar sign) needs to be run into the _terminal_ \
+(**without** the **$**) 
 
 ##### `$ npx create-react-app emailjs`
 

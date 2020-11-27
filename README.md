@@ -154,7 +154,8 @@ Under **Email Tamplate** tab:
 
 7. Once it is working, let's move on and **copy the _Template ID_** and...
 
-![TemplateID](https://user-images.githubusercontent.com/33703873/100431881-0d86ce00-3099-11eb-94cb-9a201e78381b.png)
+![templateID_settings](https://user-images.githubusercontent.com/33703873/100446732-9b6db380-30af-11eb-8f5d-19a2fd065428.png)
+
 
 8. ...paste it into .env
 

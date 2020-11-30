@@ -1,4 +1,4 @@
-# Simple React form using EmailJS to send email.
+# Simple React form using EmailJS.
 
 <br/>
 <hr>
@@ -25,25 +25,27 @@ Every command prefix with **$** (dolar sign) needs to be run into the **terminal
 
 # Let's get it started
 
-Open your **Terminal** and create the folder to store the app
+Open your **Terminal** and in the project directory, you can run:
 
-1. mkdir emailjs_tutorial
+##### 1. `$ npx create-react-app emailjs`
+
+>It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for >production. You’ll need to have Node >= 8.10 and npm >= 5.6 on your machine.
+
+##### 2. `cd emailjs-tutorial
+##### 3. `$ npm start`
 
 <p align="center">
-	<img alt="create_folder_emailjs01" src="https://user-images.githubusercontent.com/33703873/100593432-b121e980-32f8-11eb-9b4e-7f69f112f4c2.gif">
+	<img alt="npm-start" src="https://user-images.githubusercontent.com/33703873/100598549-2e505d00-32ff-11eb-9b98-b10391d7c273.gif">
 </p>
 
+It might open your app running on `localhost:3000` automaticly
 
-##### `$ npx create-react-app emailjs`
+<p align="center">
+	<img alt="app-local" src="https://user-images.githubusercontent.com/33703873/100598465-0a8d1700-32ff-11eb-86b8-95d8c10af208.gif">
+</p>
 
-#### Available Scripts
-
-In the project directory, you can run:
-
-##### `$ npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+if not, \
+open click on the link [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.
 

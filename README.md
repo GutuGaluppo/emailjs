@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Simple React form using EmailJS to send email.
 
 <br/>
 <hr>
@@ -25,13 +23,16 @@ Every command prefix with **$** (dolar sign) needs to be run into the **terminal
 <hr>
 <br/> 
 
-# Let's get started
+# Let's get it started
 
-Open your **Terminal** and create the folder
+Open your **Terminal** and create the folder to store the app
+
+1. mkdir emailjs_tutorial
 
 <p align="center">
-	<img alt="creating_tutrial_folder" src="https://user-images.githubusercontent.com/33703873/100466411-2c08bb80-30d1-11eb-88d1-9f46d9239c76.gif">
+	<img alt="create_folder_emailjs01" src="https://user-images.githubusercontent.com/33703873/100593432-b121e980-32f8-11eb-9b4e-7f69f112f4c2.gif">
 </p>
+
 
 ##### `$ npx create-react-app emailjs`
 

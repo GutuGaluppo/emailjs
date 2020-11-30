@@ -27,11 +27,15 @@ Every command prefix with **$** (dolar sign) needs to be run into the **terminal
 
 Open your **Terminal** and in the project directory, you can run:
 
-##### 1. `$ npx create-react-app emailjs`
+##### 1. `$ npx create-react-app emailjs-tutorial`
 
 >It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for >production. You’ll need to have Node >= 8.10 and npm >= 5.6 on your machine.
 
-##### 2. `cd emailjs-tutorial
+<p align="center">
+	<img alt="npx_create_app" src="https://user-images.githubusercontent.com/33703873/100601148-85a3fc80-3302-11eb-938f-e68fffd482cb.gif">
+</p>
+
+##### 2. `cd emailjs-tutorial`
 ##### 3. `$ npm start`
 
 <p align="center">

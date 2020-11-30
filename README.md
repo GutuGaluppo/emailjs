@@ -109,9 +109,10 @@ Paste the snippet into it
 
 `.env`
 
-    REACT_APP_USER_ID=
-    REACT_APP_TEMPLATE_ID=
     REACT_APP_SERVICE_ID=
+    REACT_APP_TEMPLATE_ID=    
+    REACT_APP_USER_ID=
+
     
 Once we create the app with _create-react-app_ we need to prefix every _enviroment variable_ with **REACT_APP_**
 
@@ -169,10 +170,14 @@ Under **Email Service** tab you will find your _Service ID_.
 2. Paste it into .env
 
 ```
-REACT_APP_USER_ID=
-REACT_APP_TEMPLATE_ID=
 REACT_APP_SERVICE_ID=service_apg84ff (illustration only)
+REACT_APP_TEMPLATE_ID=
+REACT_APP_USER_ID=
 ````
+
+* [x] Service ID
+* [ ] Template ID
+* [ ] User ID
 
 ## Create an Email Tamplate
 
@@ -226,6 +231,10 @@ REACT_APP_USER_ID=
 REACT_APP_TEMPLATE_ID=template_ssdjfjj (illustration only)
 REACT_APP_SERVICE_ID=service_apg84ff (illustration only)
 ````
+* [x] Service ID
+* [x] Template ID
+* [ ] User ID
+
 <br/>
 <br/>
 
@@ -243,6 +252,10 @@ REACT_APP_USER_ID=user_rvO45qERpsasXdzOC3 (illustration only)
 REACT_APP_TEMPLATE_ID=template_ssdjfjj (illustration only)
 REACT_APP_SERVICE_ID=service_apg84ff (illustration only)
 ````
+* [x] Service ID
+* [x] Template ID
+* [x] User ID
+
 <br/>
 <br/>
 

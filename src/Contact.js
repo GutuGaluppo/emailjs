@@ -30,17 +30,16 @@ export default function Contact() {
 	return (
 		<div className="form_wrapper">
 			<form onSubmit={sendEmail}>
-				<input type="hidden" name="contact_number"/>
 				<label>Name</label>
-				<input type="text" name="from_name" placeholder="John Mayer"/>
+				<input type="text" name="from_name" placeholder="Jack Sparrow"/>
 				<label>Email</label>
-				<input type="email" name="user_email" placeholder="john@email.com"/>
+				<input type="email" name="user_email" placeholder="sparrow@email.com"/>
 				<label>Phone</label>
 				<input type="phone" name="phone" placeholder="987654321"/>
 				<label>Subject</label>
-				<input type="text" name="subject" placeholder="Let's keep in touch..."/>
+				<input type="text" name="subject" placeholder="Black pearl"/>
 				<label>Message</label>
-				<textarea name="message" rows="5" placeholder="Leave our message here..."/>
+				<textarea name="message" rows="5" placeholder="Wherever we want to go, we'll go"/>
 				<input type="submit" value="Submit" className="btn"/>
 			</form>
 		</div>

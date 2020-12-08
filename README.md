@@ -114,7 +114,7 @@ Paste the snippet into it
     REACT_APP_USER_ID=
 
     
-Once we create the app with _create-react-app_ we need to prefix every _enviroment variable_ with **REACT_APP_**
+Once we create the app with _create-react-app_ we need to prefix every _environment variable_ with **REACT_APP_**
 
 ## Install _dotenv_
 [dotenv](https://www.npmjs.com/package/dotenv)
@@ -239,7 +239,7 @@ REACT_APP_SERVICE_ID=service_apg84ff (illustration only)
 <br/>
 
 The only thing we miss now is the _**User ID**_\
-Under **Integration** you will find you _User ID_ in the **API keys**
+Under **Integration** you will find your _User ID_ in the **API keys**
 
 <p align="center">
 	<img alt="userID" src="https://user-images.githubusercontent.com/33703873/100435683-93594800-309e-11eb-9769-63366f3fadc0.png">

@@ -14,6 +14,7 @@ form {
 
 input{
 	width: 20vw;
+	min-width: 12rem;
 	height: 40px;
 	margin: 10px auto;
 	padding: 10px;
@@ -31,18 +32,14 @@ label{
 }
 
 .btn {
-	max-width: 8vw;
+	width: 8rem;
 	font-size: 1rem;
 	background: transparent;
 	border: 2px solid chartreuse;
 	cursor: pointer;
 }
 .btn:hover {
-	max-width: 8vw;
-	font-size: 1rem;
 	background: chartreuse;
-	border: none;
-	cursor: pointer;
 	box-shadow: 0px 10px 25px rgba(0, 0, 0,.2);
 }
 
